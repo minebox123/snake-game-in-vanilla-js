@@ -1,0 +1,525 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+canvas {
+    background-color: black;
+}
+
+.head {
+    width: 100%;
+    height: 4rem;
+    background-color: #2196F3;
+    display: flex;
+    align-items: center;
+}
+
+h4 {
+    margin: 0 auto;
+
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px auto;
+    width: 1000px;
+}
+
+.scores {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 242px;
+}
+
+.scores h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.text {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0px 2.7rem;
+    background-color: #f44336;
+    color: white;
+
+    margin: 0;
+}
+
+.button {
+    background: #3D4C53;
+    margin: 20px auto;
+    width: 240px;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+}
+
+.btnTwo {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin-top: -100px;
+    padding-top: 2px;
+    background: #26A69A;
+    left: -250px;
+    transition: .3s;
+}
+
+.btnText {
+    color: white;
+    transition: .3s;
+}
+
+.btnText2 {
+    margin-top: 63px;
+    margin-right: -130px;
+    color: #FFF;
+}
+
+.button:hover .btnTwo {
+    /*When hovering over .button change .btnTwo*/
+    left: -130px;
+}
+
+.button:hover .btnText {
+    /*When hovering over .button change .btnText*/
+    margin-left: 65px;
+}
+
+.button:active {
+    /*Clicked and held*/
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 15px;
+    top: 0;
+    right: 0;
+    background-color: #111;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+span {
+    float: right;
+    color: #EEEEEE;
+    position: relative;
+    right: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .head {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    h4 {
+        position: relative;
+        left: 85px;
+    }
+
+    .scores {
+        margin: 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 242px;
+    }
+
+    .scores h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 2rem;
+        padding: 0px 2.7rem;
+        background-color: #f44336;
+        color: white;
+
+        margin: 0;
+    }
+
+    .button button {
+        background-color: #8BC34A;
+        font-size: 2rem;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+        padding: 5px 3rem;
+        margin-top: 1rem;
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.5)
+    }
+
+    .button button:hover {
+        background-color: #7CB342;
+    }
+
+
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 15px;
+        top: 0;
+        right: 0;
+        background-color: #111;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 25px;
+        margin-left: 50px;
+    }
+
+    span {
+        float: right;
+        color: #EEEEEE;
+        position: relative;
+        right: 20px;
+    }
+}
+
+/* ABOUT PAGE */
+
+.about {
+    display: block;
+}
+
+.srt {
+    display: flex;
+    justify-content: space-around;
+}
+
+.srt p {
+    width: 600px;
+}
+
+.nokia {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nokia p {
+    width: 600px;
+}
+
+.nokia img {
+    margin-top: 4rem;
+}
+
+.micro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.micro p {
+    width: 600px;
+}
+
+.micro img {
+    margin-top: 2rem;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    h4 {
+        margin-left: 22px;
+    }
+
+    .scores {
+        margin: 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 242px;
+    }
+
+    .scores h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 2rem;
+        padding: 0px 2.7rem;
+        background-color: #f44336;
+        color: white;
+
+        margin: 0;
+    }
+
+    .button button {
+        background-color: #8BC34A;
+        font-size: 2rem;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+        padding: 5px 3rem;
+        margin-top: 1rem;
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.5)
+    }
+
+    .button button:hover {
+        background-color: #7CB342;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 25px;
+        margin-left: 50px;
+    }
+
+    span {
+        float: right;
+        color: #EEEEEE;
+        position: relative;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .head {
+
+        width: 100%;
+    }
+
+    h4 {
+        text-align: center
+    }
+
+    canvas {
+        margin: 16px auto;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scores {
+        margin: 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scores h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .text {
+        width: 250px;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0 5rem;
+        background-color: #f44336;
+        color: white;
+
+    }
+
+
+
+    .button {
+
+
+
+        text-align: center;
+
+        color: #fff;
+
+        margin-top: 1rem;
+
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 25px;
+        margin-left: 50px;
+    }
+
+    span {
+        color: #EEEEEE;
+        position: absolute;
+        left: 15px;
+    }
+
+
+    .about h2 {
+        text-align: center;
+    }
+
+    .srt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        display: none;
+    }
+
+    .srt p {
+        width: 420px;
+    }
+
+    .nokia {
+        display: block;
+    }
+
+    .nokia p {
+        width: 420px;
+    }
+
+    .micro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .micro p {
+        width: 420px;
+    }
+
+
+}
